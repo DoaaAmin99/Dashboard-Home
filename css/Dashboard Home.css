@@ -1,4 +1,4 @@
-.wrd{
+.Font-bg{
     
     Font-Family: "Roboto", "Helvetica", "Arial", sans-serif;
     background-color:#eee;
@@ -23,6 +23,8 @@
 
 .nav-item{
     font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .nav-item .current {
@@ -49,7 +51,7 @@
   /* end of side bar */
 
   /* top nav */
-  .chs{
+  .logo{
     font-size: 20px;
     color: #999999;
   }
@@ -98,10 +100,10 @@
   color: #333333;
 }
 
-.icon-bullet1::after {
+.icon-bullet::after {
   content: "5";
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 25px;
   height: 15px;
   width: 12px;
@@ -130,17 +132,20 @@
 .card{
     margin-bottom: 15px;
     margin-top:15px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 2px 5px #999;
+    transition: all .4s;
 }
 
 .cards1{
-  padding-top: 2.2rem;
+  padding-top: 2.9rem;
 }
 
 .card-category {
   font-size: 14px;
   color: #999999;
   margin-bottom: 0;
+  padding-bottom: 6px;
+  padding-top: 6px;
   }
 
 .card-title{
@@ -157,14 +162,17 @@
 .card .card-header {
   border-bottom: none;
   background: transparent;
+  margin: 0px 15px 0;
+  padding: 0;
+  position: relative;
 }
 
-.card [class*="card-header-"] {
+/* .card [class*="card-header-"] {
   margin: 0px 15px 0;
   padding: 0;
   position: relative;
   
-}
+} */
 
 .card-stats .card-icon{
     border-radius: 3px;
@@ -206,11 +214,6 @@
   
 }
 
-.card .card-stats, .card-chart {
-  box-shadow: 1px 2px 5px #999;
-  transition: all .4s;
-}
-
 .card-stats:hover, .card-chart:hover {
   box-shadow: 2px 3px 15px #999;
   transform: translateY(-1px);
@@ -220,10 +223,11 @@
   border-radius: 3px;
 }
 
-.card-chart .card-icon{
-    padding: 15px;
-    margin-top: -20px;
+.card-chart .card-icon .events{
+    margin-top: -25px;
     box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(255, 152, 0, 0.4);
+    height: 200px;
+    border-radius: 3px;
 }
 
 .card-body{
