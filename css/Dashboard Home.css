@@ -167,13 +167,6 @@
   position: relative;
 }
 
-/* .card [class*="card-header-"] {
-  margin: 0px 15px 0;
-  padding: 0;
-  position: relative;
-  
-} */
-
 .card-stats .card-icon{
     border-radius: 3px;
     background-color: #999999;
